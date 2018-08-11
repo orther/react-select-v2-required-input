@@ -2,7 +2,7 @@
   "description": "Demo of react-select v2 using react-window for large lists",
   "main": "src/index.js",
   "dependencies": {
-    "bootstrap": "^4",
+    "bootstrap": "4.1.3",
     "prop-types": "15.6.2",
     "react": "^16",
     "react-dom": "^16",

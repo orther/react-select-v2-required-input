@@ -8,7 +8,7 @@ const noopFn = () => {};
 const options = [
   { value: 1, label: "1 - One" },
   { value: 2, label: "2 - Two" },
-  { value: 3, label: "3 - Three" },
+  { value: 3, label: "3 - Three" }
 ];
 
 const Select = props => (
@@ -57,11 +57,26 @@ export default class App extends React.Component {
             <form>
               <div className="form-group">
                 Select <i className="text-danger">required</i>
-                <Select options={options} isSearchable required />
+                <Select
+                  value={options[0]}
+                  options={options}
+                  isSearchable
+                  required
+                />
               </div>
               <div className="form-group">
                 Select <i className="text-secondary">not required</i>
-                <Select options={options} />
+                <Select value={options[1]} options={options} />
+              </div>
+              <div className="form-group">
+                Select <i className="text-secondary">required</i> and no{" "}
+                <code>value</code> prop set undefined
+                <Select value="" options={options} required />
+              </div>
+              <div className="form-group">
+                Select <i className="text-secondary">required</i> but disabled
+                so it's ignored
+                <Select value="" options={options} required isDisabled={true} />
               </div>
               <button className="btn btn-primary">Submit</button>
             </form>

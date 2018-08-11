@@ -1,5 +1,5 @@
 {
-  "description": "Demo of react-select v2 using react-window for large lists",
+  "description": "Example workaround to get HTML5 required input validation working with react-select v2",
   "main": "src/index.js",
   "dependencies": {
     "bootstrap": "4.1.3",
@@ -11,7 +11,7 @@
   "keywords": [
     "reaact-select v2"
   ],
-  "name": "react-select-v2-html5-required-attribute",
+  "name": "react-select-v2-required-input",
   "version": "0.0.602",
   "devDependencies": {
     "react-scripts": "1.0.0"

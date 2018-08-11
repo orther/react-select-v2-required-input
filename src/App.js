@@ -24,7 +24,7 @@ export default class App extends React.Component {
     return (
       <div className="container">
         <h1>
-          react-select v2 + HTML5 <code>required</code> attribute
+          react-select v2 <code>required</code>
         </h1>
         <hr />
 
@@ -69,8 +69,8 @@ export default class App extends React.Component {
                 <Select value={options[1]} options={options} />
               </div>
               <div className="form-group">
-                Select <i className="text-secondary">required</i> but
-                <code>isDisabled</code> so it's ignored
+                Select <i className="text-secondary">required</i> but has{" "}
+                <code>isDisabled</code> prop it's ignored
                 <Select value="" options={options} required isDisabled={true} />
               </div>
               <div className="form-group">

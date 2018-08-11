@@ -1,0 +1,25 @@
+{
+  "description": "Demo of react-select v2 using react-window for large lists",
+  "main": "src/index.js",
+  "dependencies": {
+    "bootstrap": "^4",
+    "prop-types": "15.6.2",
+    "react": "^16",
+    "react-dom": "^16",
+    "react-select": "latest"
+  },
+  "keywords": [
+    "reaact-select v2"
+  ],
+  "name": "react-select-v2-html5-required-attribute",
+  "version": "0.0.602",
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

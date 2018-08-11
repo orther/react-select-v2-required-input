@@ -69,14 +69,14 @@ export default class App extends React.Component {
                 <Select value={options[1]} options={options} />
               </div>
               <div className="form-group">
+                Select <i className="text-secondary">required</i> but
+                <code>isDisabled</code> so it's ignored
+                <Select value="" options={options} required isDisabled={true} />
+              </div>
+              <div className="form-group">
                 Select <i className="text-secondary">required</i> and no{" "}
                 <code>value</code> prop set undefined
                 <Select value="" options={options} required />
-              </div>
-              <div className="form-group">
-                Select <i className="text-secondary">required</i> but disabled
-                so it's ignored
-                <Select value="" options={options} required isDisabled={true} />
               </div>
               <button className="btn btn-primary">Submit</button>
             </form>

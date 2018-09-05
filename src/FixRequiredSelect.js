@@ -1,11 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const noop = () => {};
+const noop = () => {
+  // no operation (do nothing real quick)
+};
 
 class FixRequiredSelect extends React.Component {
   state = {
-    value: this.props.value || ""
+    value: this.props.value || "",
   };
 
   selectRef = null;
@@ -43,7 +45,7 @@ class FixRequiredSelect extends React.Component {
               opacity: 0,
               width: "100%",
               height: 0,
-              position: "absolute"
+              position: "absolute",
             }}
             value={this.getValue()}
             onChange={noop}
@@ -57,14 +59,14 @@ class FixRequiredSelect extends React.Component {
 }
 
 FixRequiredSelect.defaultProps = {
-  onChange: noop
+  onChange: noop,
 };
 
 FixRequiredSelect.protoTypes = {
   // react-select component class (e.g. Select, Creatable, Async)
   selectComponent: PropTypes.func.isRequired,
   onChange: PropTypes.func,
-  required: PropTypes.bool
+  required: PropTypes.bool,
 };
 
 export default FixRequiredSelect;
